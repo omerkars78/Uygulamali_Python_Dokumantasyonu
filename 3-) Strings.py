@@ -1,6 +1,6 @@
 #****************************** STRİNG VERİ TİPİ ***********************************
 # 1-) String Veri Tipi Nedir
-# sayi1 = "5" # string verileri tanımlarken parantez içine alırız
+# sayi1 = "5" # string verileri tanımlarken tırnak içine alırız
 # sayi2 =  str(6)  #  veya başına str getiririz
 # sonuc = sayi1 + sayi2 
 # print(sonuc)
