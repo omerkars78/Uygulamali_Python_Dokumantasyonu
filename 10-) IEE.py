@@ -257,6 +257,9 @@
 
 #****************************************** NESNE TABANLI PROGRAMLAMA *************************************************************
 # 1-) Class Tanımlanması 
+from pyexpat import model
+
+
 class Ogrenci():
     
     okul_adi = "Celal Bayar"
@@ -269,7 +272,8 @@ class Ogrenci():
         self.ogrenci_numarasi = int(number)
         self.devamsizlik = 0 
         self.orgunluk = orgun 
-        Ogrenci.ogrenci_sayisi += 1 
+        Ogrenci.ogrenci_sayisi_arttir()
+        
     
     def devamsizlik_kontrol(self):
         self.devamsizlik += 1 
@@ -285,38 +289,69 @@ class Ogrenci():
         print(f"Öğrencinin numarası:{self.ogrenci_numarasi}")
         print(f"Öğrencinin devansızlık:{self.devamsizlik}")
     
-# print(Ogrenci.tahsil_duzeyi)
-# print(Ogrenci.ogrenci_sayisi)
-# print(Ogrenci.orgunluk_durumu)
+    @classmethod
+    def ogrenci_sayisi_arttir(cls):
+        Ogrenci.ogrenci_sayisi += 1 
 
-# Ogrenci.okul_adi = "Dokuz Eylül"
-# print(Ogrenci.okul_adi)
+
+# omer = Ogrenci("Ömer","1234",True)
+# furkan = Ogrenci("Ömer","1234",True)
+# ahmet = Ogrenci("Ömer","1234",True)
+
+print(Ogrenci.ogrenci_sayisi)
 # 2-) Nesne Oluşturulması 
 
-# furkan = Ogrenci()
 
-# print(furkan)
 
 # 3-) __init__ Metodunun Tanımlanması
 
-omer = Ogrenci("Ömer",1234,True)
-furkan = Ogrenci("Furkan",5678,False)
-# omer.devamsizlik_kontrol()
-# omer.devamsizlik_kontrol()
-# omer.devamsizlik_kontrol()
-# omer.devamsizlik_kontrol()
-# omer.devamsizlik_kontrol()
-# omer.devamsizlik_kontrol()
-# omer.devamsizlik_kontrol()
-# furkan.devamsizlik_kontrol()
-# omer.bilgi()
-# furkan.bilgi()
-# furkan.ogrenim_sekli()
-# omer.ogrenim_sekli()
-
-print(Ogrenci.ogrenci_sayisi)
-# 4-) Objeye ait niteliklerin Tanımlanması 
 
 
 # 5-) Objeye ait Metodların Oluşturulması 
+
+
+# 6-) Class Methodlarının Oluşturulması 
+
+
+# 7-) Kalıtım
+
+#Bütün Araçlarda ortak olan özellikler vardır.
+#Ancak çeşitli motorlu taşıt türlerinin kendilerine ait farklı özellikleride bulunmaktadır.
+#Bu sebepten dolayı diğer araç türleri üzerinden oluşturacağımız classlar için ayrı ayrı
+#  (classlar ve Objeler için)
+# Metod tanımlamaya gerek yoktur.
+# Ortak Özellikte olanları zaten Araç classına tanımlamak yeterlidir.
+
+# ATA => ÇOCUK => TORUN
+# PARENT => CHİLD
+
+#ÇALIŞIR , MARKASI , MODELİ ,
+
+class Arac():
+    tur = "Motorlu Taşıt"
+    arac_sayisi = 0
+
+    def __init__(self,marka,model,var):
+        self.marka = marka 
+        self.model = model
+        self.kasko = var
+    
+    @classmethod
+    def arac_sayisi_arttir(cls):
+        Arac.arac_sayisi += 1
+
+    def calistir(self):
+        print("Araç Çalıştı")
+    def kapat(self):
+        print("Kontak Kapandı")
+    def sigorta(self):
+        if(self.kasko == True):
+            print("Araç Kaskolu")
+        else:
+            print("Kasko Yok")
+    
+class Otomobil():
+    pass
+class Otobus():
+    pass 
 #****************************************** MODÜLLER *************************************************************
