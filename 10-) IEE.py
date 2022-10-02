@@ -256,5 +256,67 @@
 
 
 #****************************************** NESNE TABANLI PROGRAMLAMA *************************************************************
+# 1-) Class Tanımlanması 
+class Ogrenci():
+    
+    okul_adi = "Celal Bayar"
+    tahsil_duzeyi = "Lisans"
+    ogrenci_sayisi = 0
+    
 
+    def __init__(self,name,number,orgun):
+        self.ogrenci_adi = name
+        self.ogrenci_numarasi = int(number)
+        self.devamsizlik = 0 
+        self.orgunluk = orgun 
+        Ogrenci.ogrenci_sayisi += 1 
+    
+    def devamsizlik_kontrol(self):
+        self.devamsizlik += 1 
+    
+    def ogrenim_sekli(self):
+        if(self.orgunluk == True):
+            print("Öğrenci Örgündür")
+        else:
+            print("Öğrenci Açık Öğretimdedir")
+
+    def bilgi(self):
+        print(f"Öğrencinin adı:{self.ogrenci_adi}")
+        print(f"Öğrencinin numarası:{self.ogrenci_numarasi}")
+        print(f"Öğrencinin devansızlık:{self.devamsizlik}")
+    
+# print(Ogrenci.tahsil_duzeyi)
+# print(Ogrenci.ogrenci_sayisi)
+# print(Ogrenci.orgunluk_durumu)
+
+# Ogrenci.okul_adi = "Dokuz Eylül"
+# print(Ogrenci.okul_adi)
+# 2-) Nesne Oluşturulması 
+
+# furkan = Ogrenci()
+
+# print(furkan)
+
+# 3-) __init__ Metodunun Tanımlanması
+
+omer = Ogrenci("Ömer",1234,True)
+furkan = Ogrenci("Furkan",5678,False)
+# omer.devamsizlik_kontrol()
+# omer.devamsizlik_kontrol()
+# omer.devamsizlik_kontrol()
+# omer.devamsizlik_kontrol()
+# omer.devamsizlik_kontrol()
+# omer.devamsizlik_kontrol()
+# omer.devamsizlik_kontrol()
+# furkan.devamsizlik_kontrol()
+# omer.bilgi()
+# furkan.bilgi()
+# furkan.ogrenim_sekli()
+# omer.ogrenim_sekli()
+
+print(Ogrenci.ogrenci_sayisi)
+# 4-) Objeye ait niteliklerin Tanımlanması 
+
+
+# 5-) Objeye ait Metodların Oluşturulması 
 #****************************************** MODÜLLER *************************************************************
