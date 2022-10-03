@@ -257,41 +257,41 @@
 
 #****************************************** NESNE TABANLI PROGRAMLAMA *************************************************************
 # 1-) Class Tanımlanması 
-from pyexpat import model
+# from pyexpat import model
 
 
-class Ogrenci():
+# class Ogrenci():
     
-    okul_adi = "Celal Bayar"
-    tahsil_duzeyi = "Lisans"
-    ogrenci_sayisi = 0
+#     okul_adi = "Celal Bayar"
+#     tahsil_duzeyi = "Lisans"
+#     ogrenci_sayisi = 0
     
 
-    def __init__(self,name,number,orgun):
-        self.ogrenci_adi = name
-        self.ogrenci_numarasi = int(number)
-        self.devamsizlik = 0 
-        self.orgunluk = orgun 
-        Ogrenci.ogrenci_sayisi_arttir()
+#     def __init__(self,name,number,orgun):
+#         self.ogrenci_adi = name
+#         self.ogrenci_numarasi = int(number)
+#         self.devamsizlik = 0 
+#         self.orgunluk = orgun 
+#         Ogrenci.ogrenci_sayisi_arttir()
         
     
-    def devamsizlik_kontrol(self):
-        self.devamsizlik += 1 
+#     def devamsizlik_kontrol(self):
+#         self.devamsizlik += 1 
     
-    def ogrenim_sekli(self):
-        if(self.orgunluk == True):
-            print("Öğrenci Örgündür")
-        else:
-            print("Öğrenci Açık Öğretimdedir")
+#     def ogrenim_sekli(self):
+#         if(self.orgunluk == True):
+#             print("Öğrenci Örgündür")
+#         else:
+#             print("Öğrenci Açık Öğretimdedir")
 
-    def bilgi(self):
-        print(f"Öğrencinin adı:{self.ogrenci_adi}")
-        print(f"Öğrencinin numarası:{self.ogrenci_numarasi}")
-        print(f"Öğrencinin devansızlık:{self.devamsizlik}")
+#     def bilgi(self):
+#         print(f"Öğrencinin adı:{self.ogrenci_adi}")
+#         print(f"Öğrencinin numarası:{self.ogrenci_numarasi}")
+#         print(f"Öğrencinin devansızlık:{self.devamsizlik}")
     
-    @classmethod
-    def ogrenci_sayisi_arttir(cls):
-        Ogrenci.ogrenci_sayisi += 1 
+#     @classmethod
+#     def ogrenci_sayisi_arttir(cls):
+#         Ogrenci.ogrenci_sayisi += 1 
 
 
 # omer = Ogrenci("Ömer","1234",True)
@@ -372,42 +372,77 @@ class Ogrenci():
 
 # arac_3 = Otobus("Audi","Setra",True,50)
   
-class Kisi():
-    def __init__(self,ad,soyad,tc):
-        self.ad = ad
-        self.soyad = soyad
-        self.__tc = tc 
-    # değeri görmek için get ile alamız gerekir
-    # def get_tc(self):
-    #     return self.__tc
-    # değeri değiştirmek için set metodu kullanmamız gerekir
-    # def set_tc(self,yenitc):
-    #     self.__tc = yenitc 
+# class Kisi():
+#     def __init__(self,ad,soyad,tc):
+#         self.ad = ad
+#         self.soyad = soyad
+#         self.__tc = tc 
+#     # değeri görmek için get ile alamız gerekir
+#     # def get_tc(self):
+#     #     return self.__tc
+#     # değeri değiştirmek için set metodu kullanmamız gerekir
+#     # def set_tc(self,yenitc):
+#     #     self.__tc = yenitc 
 
-    @property
-    def tc(self):
-        return self.__tc
+#     @property
+#     def tc(self):
+#         return self.__tc
 
-    @tc.setter
-    def tc(self,yenitc):
-        self.__tc = yenitc
+#     @tc.setter
+#     def tc(self,yenitc):
+#         self.__tc = yenitc
 
-    @tc.deleter
-    def tc(self):
-        del self.__tc 
-kisi_1 = Kisi("Ahmet","Yılmaz",12345)
+#     @tc.deleter
+#     def tc(self):
+#         del self.__tc 
+# kisi_1 = Kisi("Ahmet","Yılmaz",12345)
 
-kisi_1.tc = 23455
+# kisi_1.tc = 23455
 
-print(kisi_1.tc)
-
-
-
-
-
-
+# print(kisi_1.tc)
 
 
 
 
 #****************************************** MODÜLLER *************************************************************
+# bilgi = "bu bir modül dosyasıdır"
+# def bilgilerigoster(ad,soyad,yas):
+#     print(f"""
+#             Ad: {ad}
+#             Soyad: {soyad}
+#             Yaş: {yas}
+#     """)
+
+# class Bilgi():
+#     bilgi= "bilgi"
+#     def __init__(self):
+#         self.bilgler = "bu bir bilgi"
+
+
+# liste = [1,2,3,4]
+
+
+# bilgi_1 = Bilgi()
+# 2-) İmport Yöntemleri 
+
+# 1. Yöntem (import)
+
+
+# 2. Yöntem (from import)
+
+
+# 3. Yöntem  (from modül import *)
+ 
+
+
+# 4. Yöntem (as)
+
+
+# 5. Yöntem (from iee import bilgi as bg)
+ 
+
+# 3-) BUİLT-İN MODULES
+
+# 1. Random Modülü 
+# 2. Datetime Modülü 
+
