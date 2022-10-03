@@ -298,7 +298,7 @@ class Ogrenci():
 # furkan = Ogrenci("Ömer","1234",True)
 # ahmet = Ogrenci("Ömer","1234",True)
 
-print(Ogrenci.ogrenci_sayisi)
+
 # 2-) Nesne Oluşturulması 
 
 
@@ -327,31 +327,87 @@ print(Ogrenci.ogrenci_sayisi)
 
 #ÇALIŞIR , MARKASI , MODELİ ,
 
-class Arac():
-    tur = "Motorlu Taşıt"
-    arac_sayisi = 0
+# class Arac():
+#     tur = "Motorlu Taşıt"
+#     arac_sayisi = 0
 
-    def __init__(self,marka,model,var):
-        self.marka = marka 
-        self.model = model
-        self.kasko = var
+#     def __init__(self,marka,model,var):
+#         self.marka = marka 
+#         self.model = model
+#         self.kasko = var
     
-    @classmethod
-    def arac_sayisi_arttir(cls):
-        Arac.arac_sayisi += 1
+#     @classmethod
+#     def arac_sayisi_arttir(cls):
+#         Arac.arac_sayisi += 1
 
-    def calistir(self):
-        print("Araç Çalıştı")
-    def kapat(self):
-        print("Kontak Kapandı")
-    def sigorta(self):
-        if(self.kasko == True):
-            print("Araç Kaskolu")
-        else:
-            print("Kasko Yok")
+#     def calistir(self):
+#         print("Araç Çalıştı")
+#     def kapat(self):
+#         print("Kontak Kapandı")
+#     def sigorta(self):
+#         if(self.kasko == True):
+#             print("Araç Kaskolu")
+#         else:
+#             print("Kasko Yok")
     
-class Otomobil():
-    pass
-class Otobus():
-    pass 
+# class Otomobil(Arac):
+#     def __init__(self,marka,model,var,kapasite):
+#         Arac.__init__(self,marka,model,var)
+#         self.kapasite = kapasite
+
+
+# class Otobus():
+#     def __init__(self,marka,model,var,kapasite):
+#         super().__init__(self,marka,model,var)
+#         self.kapasite = kapasite
+#     def calistir():
+#         print("Otobüs Çalıştı")
+         
+
+
+
+# arac_1 = Arac("Mercedes","e200",True,5)
+
+# arac_2 = Otomobil("BMW","500d",True,5)
+
+# arac_3 = Otobus("Audi","Setra",True,50)
+  
+class Kisi():
+    def __init__(self,ad,soyad,tc):
+        self.ad = ad
+        self.soyad = soyad
+        self.__tc = tc 
+    # değeri görmek için get ile alamız gerekir
+    # def get_tc(self):
+    #     return self.__tc
+    # değeri değiştirmek için set metodu kullanmamız gerekir
+    # def set_tc(self,yenitc):
+    #     self.__tc = yenitc 
+
+    @property
+    def tc(self):
+        return self.__tc
+
+    @tc.setter
+    def tc(self,yenitc):
+        self.__tc = yenitc
+
+    @tc.deleter
+    def tc(self):
+        del self.__tc 
+kisi_1 = Kisi("Ahmet","Yılmaz",12345)
+
+kisi_1.tc = 23455
+
+print(kisi_1.tc)
+
+
+
+
+
+
+
+
+
+
 #****************************************** MODÜLLER *************************************************************
