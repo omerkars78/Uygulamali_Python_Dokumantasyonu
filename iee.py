@@ -204,42 +204,42 @@ list3.sort()
 
 # 2-) Atama Operatörleri
 # - Eşittir Operatörü(=)
-yas = 14
-# - Artı Eşittir Operatörü(+=)
-yas += 1
-print(yas)
-# - Eksi Eşittir Operatörü(-=)
-yas -= 4
-print(yas)
-# - Çarpı Eşittir Operatörü(*=)
-yas *= 4
-print(yas)
-# - Bölü Eşittir Operatörü(/=)
-yas /= 5
-print(yas)
-# - Mod Eşittir Operatörü(%=)
-yas %= 5
-print(yas)
-# 3-) Karşılaştırma Operatörleri(Sonucun True veya False değerlerini Aldığımız Operatörler)
-# - Eşittir Operatörü(==)
-print(5 == 5)
-print(5 == 6)
-# - Eşit Değildir Operatörü(!=)
-print(5 != 6)
-# - Büyüktür Operatörü(>)
-print(7 > 6)
-# - Küçüktür Operatörü(<)
-print(5 <= 6)
-# - Büyük Eşittir Operatörü(>=)
-print(5<=6)
-# - Küçük Eşittir Operatörü(<=)
-print(5>=6)
-# 4-) Mantıksal Operatörler(Sonucunda True veya False Değer Aldığımız Operatörlerdir)
-# - And Operatörü
-print(5==5 and 6==7)
-# And operatöründe True bir sonuç almak için her iki ifadeninde doğru olması gerekir.
-# - Or Operatörü
-print(5==9 or 6==7)
+# yas = 14
+# # - Artı Eşittir Operatörü(+=)
+# yas += 1
+# print(yas)
+# # - Eksi Eşittir Operatörü(-=)
+# yas -= 4
+# print(yas)
+# # - Çarpı Eşittir Operatörü(*=)
+# yas *= 4
+# print(yas)
+# # - Bölü Eşittir Operatörü(/=)
+# yas /= 5
+# print(yas)
+# # - Mod Eşittir Operatörü(%=)
+# yas %= 5
+# print(yas)
+# # 3-) Karşılaştırma Operatörleri(Sonucun True veya False değerlerini Aldığımız Operatörler)
+# # - Eşittir Operatörü(==)
+# print(5 == 5)
+# print(5 == 6)
+# # - Eşit Değildir Operatörü(!=)
+# print(5 != 6)
+# # - Büyüktür Operatörü(>)
+# print(7 > 6)
+# # - Küçüktür Operatörü(<)
+# print(5 <= 6)
+# # - Büyük Eşittir Operatörü(>=)
+# print(5<=6)
+# # - Küçük Eşittir Operatörü(<=)
+# print(5>=6)
+# # 4-) Mantıksal Operatörler(Sonucunda True veya False Değer Aldığımız Operatörlerdir)
+# # - And Operatörü
+# print(5==5 and 6==7)
+# # And operatöründe True bir sonuç almak için her iki ifadeninde doğru olması gerekir.
+# # - Or Operatörü
+# print(5==9 or 6==7)
 # Or operatöründe True bir sonuç almak için her iki ifadenin veya yanlızca birinin doğru olması yeterlidir.
 
 
@@ -248,7 +248,19 @@ print(5==9 or 6==7)
 
 #****************************************** KOŞULLU İFADELER *************************************************************
 # 1-) If ve ELse Nedir Nasıl ve Nerelerde Kullanılır ?
+# a,b,c = 1,2,1
+# if(a == c):
+#     print("a ve c eşittir")
+# else:
+#     print("a ve c eşit değildir")
 
+# kullanici_adi = input("Kullanıcı adı giriniz: ")
+# parola = input("Parolayı giriniz: ")
+
+# if(kullanici_adi == "omer" and parola=="123"):
+#     print("kullanıcı adı ve parola doğru")
+# else:
+#     print("kullanıcı adı ve parola yanlış")
 # 2-) Elif Bloğu Nedir Hangi durumlarda Kullanılır ?
 
 # 3-) Uygulama 
@@ -257,7 +269,18 @@ print(5==9 or 6==7)
 # Eğer 45 ve 60 arasındaysa CB , eğer 45 ten düşükse FF olacak şekildedir.
 # Bu koşullara göre geçme notu hesaplayan ve harf notu olarak karşılık veren python kodunu yazınız.
 
-
+# 4-) Elif Uygulaması
+# hayvan_adi = input("bir hayvan adı giriniz: ")
+# if(hayvan_adi == "at"):
+#     print("Evet at bir hayvandır")
+# elif(hayvan_adi == "eşek"):
+#     print("Evet eşek bir hayvandır")
+# elif(hayvan_adi == "kuş"):
+#     print("Evet kuş bir hayvandır")
+# elif(hayvan_adi == "kedi"):
+#     print("Evet kedi bir hayvandır")   
+# else:
+#     print(f"{hayvan_adi} gerçekten bir hayvan mıdır ?") 
 
 
 
