@@ -74,33 +74,47 @@
 
 #****************************************** LİSTELER *************************************************************
 # 1-) Liste Nedir Nasıl Tanımlanır ?
+list1 = [1,2,3,"ali","veli",True,False,1.45]
 
 #  - Liste İşlemleri (index)
 
 #  - İç İçe Liste
-
+list2 = [1,2,3,[1,2,3,4,5],"ali","veli",[1,[2,3,[4,5,[6]]]],True,False,1.45,1,1,1,1,1,2,3,2]
+# print(list2)
+# print(list2[6])
+# print(list2[6][1])
+# print(list2[6][1][2])
+# print(list2[6][1][2][2][0])
 # 2-) Liste Metodları Nelerdir Nasıl Kullanılır?
 
 # * Sadece listerde kullanırız
 # * İşlerimiz kolaylaştırır
 
 #  - Append (ekleme)
+list1.append(5)
 
 #  - İnsert (indekse göre ekleme)
+list1.insert(0,8)
 
 #  - Pop (Son elemanı çıkarma)
+list1.pop()
 
 #  - Remove (Seçili elemanı çıkarma)
+list1.remove("ali")
 
 #  - Del (İstenilen yerleri silme)
+del list1[1:3]
 
 #  - Count (İstenilen Elemanın Kaç Adet olduğunu bulma)
 
 #  - İndex(İstenilen Elemanın İndexini Bulma)
 
 #  - Reverse(Tersine Çevirme)
+list1.reverse()
 
 #  - Sort(Harf Sırasına Göre Sıralama)
+list3 = ["s","g","f","s","c","d","d","fd","d","e","w","z","a","b","c","b","r"]
+list3.sort()
 
 # 3-) TUPLES 
 
@@ -117,24 +131,67 @@
 
 # 4-) Dictionary
 # - Dictionary Nedir? Nasıl Tanımlanır? 
+# kisi = {
+#     "isim":"Ahmet",
+#     "soyad" : "Yılmaz",
+#     "yas" : 14
+# }
+# personel = {
+#     301 : {
+#         "isim":"Ahmet",
+#         "soyad" : "Yılmaz",
+#         "yas" : 14,
+#         "departman":"muhasebe",
+#         "maas": 3000
+#     },
+#     302 : {
+#         "isim":"Ahmet",
+#         "soyad" : "Yılmaz",
+#         "yas" : 14,
+#         "departman":"muhasebe",
+#         "maas": 5000
+#     },
+#     303 : {
+#         "isim":"Ahmet",
+#         "soyad" : "Yılmaz",
+#         "yas" : 14,
+#         "departman":"muhasebe",
+#         "maas": 4000
+#     }
+# }
+# print(personel[301]["maas"])
+# maas301 = personel[301]["maas"]
+# maas302 = personel[302]["maas"]
+# maas303 = personel[303]["maas"]
+# ortalama = ( maas301 + maas302 + maas303 ) / 3
+# print(int(ortalama))
+# # - Dictionary Metodları
 
-# - Dictionary Metodları
-
-# - keys()(Anahatarları liste olarak sıralar)
-
-# - values()(Value değerlerini liste olarak sıralar)
-
-# - items()(key ve valueları aynı anda sıralar)
-
-# - get()(sözlük elemanını alırız)
-
-# - pop()(istenilen anahtarı siler)
-
-# - copy()(sözlüğün kopyasını alır bununla alının kopya aslını etkilemez)
-
-# - update()(Verileri güncellememize yarar)
-
-
+# # - keys()(Anahatarları liste olarak sıralar)
+# print(personel.keys())
+# # - values()(Value değerlerini liste olarak sıralar)
+# print(personel.values())
+# # - items()(key ve valueları aynı anda sıralar)
+# print(personel.items())
+# # - get()(sözlük elemanını alırız)
+# print(personel.get(301))
+# # - pop()(istenilen keyi siler)
+# personel.pop(303)
+# print(personel)
+# # - copy()(sözlüğün kopyasını alır bununla alının kopya aslını etkilemez)
+# calisan = personel.copy()
+# print(calisan)
+# # - update()(Verileri güncellememize yarar)
+# personel.update({
+#     301:{
+#         "isim":"Ali",
+#         "soyad" : "Yılar",
+#         "yas" : 17,
+#         "departman":"bilgi işlem",
+#         "maas": 6000
+#     }
+# })
+# print(personel)
 
 
 
@@ -147,36 +204,42 @@
 
 # 2-) Atama Operatörleri
 # - Eşittir Operatörü(=)
-
+yas = 14
 # - Artı Eşittir Operatörü(+=)
-
+yas += 1
+print(yas)
 # - Eksi Eşittir Operatörü(-=)
-
+yas -= 4
+print(yas)
 # - Çarpı Eşittir Operatörü(*=)
-
+yas *= 4
+print(yas)
 # - Bölü Eşittir Operatörü(/=)
-
+yas /= 5
+print(yas)
 # - Mod Eşittir Operatörü(%=)
-
+yas %= 5
+print(yas)
 # 3-) Karşılaştırma Operatörleri(Sonucun True veya False değerlerini Aldığımız Operatörler)
 # - Eşittir Operatörü(==)
-
+print(5 == 5)
+print(5 == 6)
 # - Eşit Değildir Operatörü(!=)
-
+print(5 != 6)
 # - Büyüktür Operatörü(>)
-
+print(7 > 6)
 # - Küçüktür Operatörü(<)
-
+print(5 <= 6)
 # - Büyük Eşittir Operatörü(>=)
-
+print(5<=6)
 # - Küçük Eşittir Operatörü(<=)
-
+print(5>=6)
 # 4-) Mantıksal Operatörler(Sonucunda True veya False Değer Aldığımız Operatörlerdir)
 # - And Operatörü
-
+print(5==5 and 6==7)
 # And operatöründe True bir sonuç almak için her iki ifadeninde doğru olması gerekir.
 # - Or Operatörü
-
+print(5==9 or 6==7)
 # Or operatöründe True bir sonuç almak için her iki ifadenin veya yanlızca birinin doğru olması yeterlidir.
 
 
