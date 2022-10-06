@@ -291,15 +291,35 @@ list3.sort()
 
 
 # 2-) While Döngüleri Nedir ve Nasıl Tanımlanır?
-
-# -) While İle Neler Yapabiliriz?
-
-# -) While Bloğu İçinde İf ve Else 
+# def sevgi():
+#     print("Seni Seviyorum")
+# i = 0
+# while(i<10):
+#     i+=1
+#     sevgi()
     
-# -) Break ve Continue Nedir Ne İşe Yarar?
+# maas = {"a":100,"b":200}
+# for x,y in maas.items():
+#     print(x,y)
+    
+# # -) While İle Neler Yapabiliriz?
 
-
-
+# # -) While Bloğu İçinde İf ve Else 
+#     x = 0
+#     while(x<100):
+#         x+=1
+#         if(x%2 == 0):
+#             print(f"{x} çift sayıdır")
+#         else:
+#             print(f"{x} tek sayıdır")
+# # -) Break ve Continue Nedir Ne İşe Yarar?
+# while True:
+#     esek_yolu = input("Eşek Nereden Geldi?")
+#     if(esek_yolu == "sudan"):
+#         print("TEBRİKLER EŞEK SUDAN GELDİ")
+#         break 
+#     else:
+#         continue
 
 
 
@@ -329,7 +349,28 @@ list3.sort()
 # 3-) Fonksiyona Parametre Gönderme(Fonksiyonun temel bileşenleri = girdi işlem ve çıktı)
 
 # 4-) İç İçe Fonksiyonlar
+kisiler = [("Ömer","Kars",2001),("Furkan","Anter",1999),("Çağrı","Açıkgöz",2007)]
+def yas_hesapla(dogum_tarihi):
+    return 2022 - dogum_tarihi
 
+def ehliyet(isim,soyisim,dogum_tarihi):
+
+    yas = yas_hesapla(dogum_tarihi)
+    yas = int(yas)
+    sure = 18 - yas 
+
+    if(yas >= 18):
+        print(f"""
+                Tebrikler {isim} {soyisim} yaşınız {yas} olduğu için Ehliyet Alabilirsiniz.
+        """)
+    else:
+        print(f"""
+                Maalesef {isim} {soyisim} yaşınız {yas} olduğu için Ehliyet Alamıyorsunuz.
+                {sure} kadar yıl beklemelisiniz
+        """)
+
+for x,y,z in kisiler:
+    ehliyet(x,y,z)
 # 5-) Uygulama
 # Maaşı 5000 TL olan bir kişinin harcamalarına yönelik bir program yazınız. 
 # Geliştirilecek programda harcamalar değişken olarak tanımlanacak ve maaş limitine göre
