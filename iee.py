@@ -550,7 +550,7 @@ for x,y,z in kisiler:
 
 
 # bilgi_1 = Bilgi()
-# 2-) İmport Yöntemleri 
+# 2-) İmport Yöntemleri sdsd
 
 # 1. Yöntem (import)
 
