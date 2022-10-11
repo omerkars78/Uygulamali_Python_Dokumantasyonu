@@ -311,7 +311,7 @@
 
 
 # 3. Yöntem (as)
-bilgi = "bilgi"
+
 
 #4. Yöntem (from iee import bilgi as bg)
  
@@ -319,5 +319,5 @@ bilgi = "bilgi"
 # 3-) BUİLT-İN MODULES
 
 # 1. Random Modülü 
-# 2. Datetime Modülü 
+ 
 
