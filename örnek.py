@@ -283,6 +283,22 @@ list_2 = [1,2,3,4,[6,7,8,[9,[10,[11]]]],12,13]
 # print(list_2[4][3][1])
 # print(list_2[4][3][1][1])
 # print(list_2[4][3][1][1][0])
-list_3 = list_1 + list_2 
+# list_3 = list_1 + list_2 
 
+# print(list_3)
+
+# list_3 = [1,2,3,4,5,1,1,1,1,1,1,2,3,3,3,2,3]
+
+# list_3.append(6)
+# list_3.insert(0,"ilk")
+# list_3.insert(6,7)
+# list_3.pop()
+# list_3.remove("ilk")
+# del list_3[0:2]
+# # print(list_3.count(3))
+# list_3.reverse()
+# print(list_3)
+
+list_3 = ["a","b","p","c","k","s"]
+list_3.sort()
 print(list_3)
