@@ -2,23 +2,27 @@
 # 1-) SAYISAL VERİ TİPLERİ
 
 # - Integer (int)
+# 1,2,3,4,-3,-2
+# print(type(4))
+# 1,2,3,4
+# int(2)
+# # - Float 
+# 1.1,2.5,-3.8938943 
+# print(type(1.1))
+# # 2-) SAYISAL OPERATÖRLER
 
-# - Float 
-
-# 2-) SAYISAL OPERATÖRLER
-
-# - Toplama (+)
-
-# - Çıkarma (-)
-
-# - Çarpma  (*)
-
-# - Bölme   (/)
-
-# - Mod Alma (%)
-
-# - Üs Alma (**)
-
+# # - Toplama (+)
+# print(1+1)
+# # - Çıkarma (-)
+# print(2-1)
+# # - Çarpma  (*)
+# print(5*5)
+# # - Bölme   (/)
+# print(int(36/6))
+# # - Mod Alma (%)
+# print(15%4)
+# # - Üs Alma (**)
+# print(2**4)
 # 3-) SAYISAL VERİ TİPLERİ ARASI İŞLEMLER
 
 
@@ -27,39 +31,70 @@
 
 #****************************************** DEĞİŞKENLER *************************************************************
 # 1-) Değişken Nedir?
-
+sayi_1 = 4 
+sayi_2 = 8
+print(sayi_1*sayi_2)
+print(3*4)
 # 2-) Değişken tanımlama Kuralları Nelerdir? 
 
 # - Sayı ile Başlayamaz
-
+degisken = 4
 # - Boşluk İçeremez
-
+birinciSayi = 1
 # - Büyük Küçük Harf Farklılığı Vardır
-
+age = 3
+AGE = 5
+aGe = 8 
+age = 10
+print(age)
+print(AGE)
+print(aGe)
 # - Yan Yana Değer Ataması Yapılabilir
-
+x,y,z = 1,2,3
 # - Türkçe Karakter İçermese Güzel Olur
+#ı,ü,ö,ğ
+# 3-) Değişkenlerle İlgili Uygulamalar(vize final notu )
 
-# 3-) Değişkenlerle İlgili Uygulamalar
-
-
+vize_notu = 70
+final_notu = 60 
+vize_etki = 0.5 
+final_etki = 0.5
+gecme_notu = int((vize_notu*vize_etki) + (final_notu*final_etki))
+print(gecme_notu)
 
 
 
 
 #****************************************** STRİNGLER *************************************************************
 # 1-) String Veri Tipi Nedir
+bilgi= "Bu bir string ifadedir"
+bilgi= 'Bu bir string ifadedir' 
+bilgi_2 = "Bu bir 'string' ifadedir"
+bilgi_3 = 'Bu bir "string" ifadedir'
+# sayi_1 = str(1)
+# sayi_2 = str(2)
+# sayi_1 = "1"
+# sayi_2 = "     2"
 
+# print(bilgi)
+# print(sayi_1+sayi_2)
+# print(bilgi_2)
+# print(bilgi_3)
 # 2-) String İşlemleri Nelerdir (İndeks Kavramı)
-
+bilgi_4 = "Bu bir string ifadedir indexler tutar"
+# print(bilgi_4[2])
+# print(bilgi_4[5:19])
+# print(bilgi_4[:-1])
 # 3-) Stringle İlgili Fonksiyonlar
 
 #  - Len (Uzunluk Fonksiyonu)
-
+# print(len(bilgi_4))
+# print(bilgi_4[36])
 #  - Upper ve Lower Fonksiyonları 
-
-#  - Find Fonksiyonu
-
+lower_1 = "merhaba bu bir mesajdır"
+lower_2 = "BU FARKLI BİR ŞEYDİR"
+print(lower_1.upper())
+print(lower_2.lower())
 #  - Startswith ve Endswith Fonksiyonları
 
 #  - Split Fonksiyonu (Ayrıma)
@@ -140,7 +175,7 @@
 
 # # - copy()(sözlüğün kopyasını alır bununla alının kopya aslını etkilemez)
 
-# # - update()(Verileri güncellememize yarar)
+# # - update()(Verileri güncellememize yarar)(({}))
 
 
 
@@ -211,9 +246,9 @@
 
 
     
-# # -) While İle Neler Yapabiliriz?
+# # -) While İle Neler Yapabiliriz?(tam sayı çift sayı)
 
-# # -) While Bloğu İçinde İf ve Else 
+# # -) While Bloğu İçinde İf ve Else (break Continue)
 
 
 
