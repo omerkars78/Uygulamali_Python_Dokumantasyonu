@@ -317,18 +317,18 @@ bilgi_4 = "Bu bir string ifadedir indexler tutar"
 # else:
 #     print("Kullanıcı Adı veya Şifre Hatalı")
 # 2-) Elif Bloğu Nedir Hangi durumlarda Kullanılır ?
-animal_name = input("Bir hayvan adı giriniz: ")
-if(animal_name == "kuş"):
-    print("Evet Kuş Gerçekten bir hayvandır")
-elif(animal_name == "kedi"):
-    print("Evet Kedi Gerçekten bir hayvandır")
-elif(animal_name == "at"):
-    print("Evet at Gerçekten bir hayvandır")
-elif(animal_name == "köpek"):
-    print("Evet Köpek Gerçekten bir hayvandır")
+# animal_name = input("Bir hayvan adı giriniz: ")
+# if(animal_name == "kuş"):
+#     print("Evet Kuş Gerçekten bir hayvandır")
+# elif(animal_name == "kedi"):
+#     print("Evet Kedi Gerçekten bir hayvandır")
+# elif(animal_name == "at"):
+#     print("Evet at Gerçekten bir hayvandır")
+# elif(animal_name == "köpek"):
+#     print("Evet Köpek Gerçekten bir hayvandır")
 
-else:
-    print(f"{animal_name} gerçekten bir hayvan mıdır?")
+# else:
+#     print(f"{animal_name} gerçekten bir hayvan mıdır?")
 
 
 # 4-) Elif Uygulaması
@@ -338,13 +338,33 @@ else:
 
 #****************************************** DÖNGÜLER *************************************************************
 # 1-) For Döngüleri Nedir? Ne İşe Yarar? Nasıl Tanımlanır ?
+list = [300,400,500]
+# print(list[0]+50)
+# print(list[1]+50)
+# print(list[2]+50)
 
+# for i in list: 
+#     print(i+50)
+# # 2-) While Döngüleri Nedir ve Nasıl Tanımlanır?
 
-
-# 2-) While Döngüleri Nedir ve Nasıl Tanımlanır?
-
-
+i = 0
+# while (i<100): 
+#     i += 1
+#     if (i%2) == 1:
+#         print("Sayı Tektir")
+#     else:
+#         print("Sayı Çifttir")
     
+
+
+# while True:
+#     esek_yolu = input("Eşek Nereden geldi: ")
+#     if(esek_yolu == "Sudan"):
+#         print("Eşek Sudan geldi Tebrikler")
+#         break 
+#     else:
+#         print("maalesef eşek yanlış yoldan geldi")
+#     continue
 # # -) While İle Neler Yapabiliriz?(tam sayı çift sayı)
 
 # # -) While Bloğu İçinde İf ve Else (break Continue)
