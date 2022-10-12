@@ -33,34 +33,34 @@
 # 1-) Değişken Nedir?
 sayi_1 = 4 
 sayi_2 = 8
-print(sayi_1*sayi_2)
-print(3*4)
+#print(sayi_1*sayi_2)
+# print(3*4)
 # 2-) Değişken tanımlama Kuralları Nelerdir? 
 
 # - Sayı ile Başlayamaz
-degisken = 4
-# - Boşluk İçeremez
-birinciSayi = 1
-# - Büyük Küçük Harf Farklılığı Vardır
-age = 3
-AGE = 5
-aGe = 8 
-age = 10
-print(age)
-print(AGE)
-print(aGe)
-# - Yan Yana Değer Ataması Yapılabilir
-x,y,z = 1,2,3
-# - Türkçe Karakter İçermese Güzel Olur
-#ı,ü,ö,ğ
-# 3-) Değişkenlerle İlgili Uygulamalar(vize final notu )
+# degisken = 4
+# # - Boşluk İçeremez
+# birinciSayi = 1
+# # - Büyük Küçük Harf Farklılığı Vardır
+# age = 3
+# AGE = 5
+# aGe = 8 
+# age = 10
+# print(age)
+# print(AGE)
+# print(aGe)
+# # - Yan Yana Değer Ataması Yapılabilir
+# x,y,z = 1,2,3
+# # - Türkçe Karakter İçermese Güzel Olur
+# #ı,ü,ö,ğ
+# # 3-) Değişkenlerle İlgili Uygulamalar(vize final notu )
 
-vize_notu = 70
-final_notu = 60 
-vize_etki = 0.5 
-final_etki = 0.5
-gecme_notu = int((vize_notu*vize_etki) + (final_notu*final_etki))
-print(gecme_notu)
+# vize_notu = 70
+# final_notu = 60 
+# vize_etki = 0.5 
+# final_etki = 0.5
+# gecme_notu = int((vize_notu*vize_etki) + (final_notu*final_etki))
+# print(gecme_notu)
 
 
 
@@ -91,30 +91,51 @@ bilgi_4 = "Bu bir string ifadedir indexler tutar"
 # print(len(bilgi_4))
 # print(bilgi_4[36])
 #  - Upper ve Lower Fonksiyonları 
-lower_1 = "merhaba bu bir mesajdır"
-lower_2 = "BU FARKLI BİR ŞEYDİR"
-print(lower_1.upper())
-print(lower_2.lower())
-#  - Startswith ve Endswith Fonksiyonları
-
-#  - Split Fonksiyonu (Ayrıma)
-
-#  - Replace Fonksiyonu (Cümle Değiştirme)
-
-
-
-
+# lower_1 = "merhaba bu bir mesajdır"
+# lower_2 = "BU FARKLI BİR ŞEYDİR"
+# print(lower_1.upper())
+# print(lower_2.lower())
+# #  - Startswith ve Endswith Fonksiyonları
+# print(lower_1.startswith("merhaba"))
+# print(lower_1.startswith("selam"))
+# print(lower_1.endswith("mesajdır"))
+# print(lower_1.endswith("selam"))
+# #  - Split Fonksiyonu (Ayrıma)
+# print(lower_1.split())
+# liste_split = lower_1.split()
+# print(liste_split)
+# #  - Replace Fonksiyonu (Cümle Değiştirme)
+# gunluk = "Ömer bugün okula gitti. Ömer okuldan geldi. Ömer uyudu"
+# # print(gunluk.replace("Ö","O"))
+# # Format Metodu 
+# ad = "Ömer"
+# soyad = "Kars"
+# yas = 21 
+# cumle = "{} {} {} Yaşındadır.".format(ad,soyad,yas)
+# cumle = f"{ad} {soyad} {yas} Yaşındadır."
+# print(cumle)
 
 
 
 #****************************************** LİSTELER *************************************************************
 # 1-) Liste Nedir Nasıl Tanımlanır ?
-
-
+ad = "Ömer"
+list_1 = [1,2,3,1.1,2.3,"ali",True,False,ad]
+print(list_1)
 #  - Liste İşlemleri (index)
-
+print(list_1[8])
+print(list_1[0:5])
 #  - İç İçe Liste
-
+list_2 = [1,2,3,[4,5,[6,[7,[8]]]],9]
+print(list_2)
+print(list_2[3])
+print(list_2[3][2])
+print(list_2[3][2])
+print(list_2[3][2][1])
+print(list_2[3][2][1][1])
+print(list_2[3][2][1][1][0])
+sekiz = list_2[3][2][1][1][0]
+print(sekiz+10)
 # 2-) Liste Metodları Nelerdir Nasıl Kullanılır?
 
 # * Sadece listerde kullanırız
