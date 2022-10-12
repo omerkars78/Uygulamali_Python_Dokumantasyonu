@@ -140,34 +140,43 @@ print(sekiz+10)
 #https://python-istihza.yazbel.com/listelerin_ve_demetlerin_metotlari.html
 # * Sadece listerde kullanırız
 # * İşlerimiz kolaylaştırır
-list_3 = [1,2,3,4,5]
+list_3 = [1,2,3,4,5,5,5,True,5,5,1,1,1,1,1,1]
 #  - Append (ekleme)
 
+list_3.append(6)
 
 #  - İnsert (indekse göre ekleme)
-
-
+list_3.insert(0,"ali")
+print(list_3)
 #  - Pop (Son elemanı çıkarma)
 
-
+list_3.pop()
+print(list_3)
 #  - Remove (Seçili elemanı çıkarma)
-
+list_3.remove("ali")
+print(list_3)
 
 #  - Del (İstenilen yerleri silme)
 
-
+del list_3[0:2]
+print(list_3)
 #  - Count (İstenilen Elemanın Kaç Adet olduğunu bulma)
-
+print(list_3.count(1))
 #  - İndex(İstenilen Elemanın İndexini Bulma)
-
+print(list_3.index(True))
 #  - Reverse(Tersine Çevirme)
 
-
+list_3.reverse()
+print(list_3)
 #  - Sort(Harf Sırasına Göre Sıralama)
-
+list_4 = ["s","d","k","l","a"]
+list_4.sort()
+print(list_4)
 
 # 3-) TUPLES 
-
+tuple_1 = 1,2,3,4,"Ömer"
+tuple_1 = (1,2,3,4,"Ömer")
+print(type(tuple_1))
 # - Öğelere Erişim Ortaktır
 
 # - Len Metodu Ortaktır
@@ -181,25 +190,63 @@ list_3 = [1,2,3,4,5]
 
 # 4-) Dictionary
 # - Dictionary Nedir? Nasıl Tanımlanır? 
-
+omer = {
+    "Ad":"Ömer",
+    "Soyad":"Kars",
+    "Yas": 21 
+}
+calisan = {
+    301:{
+        "Ad":"Ömer",
+        "Soyad":"Kars",
+        "Yas": 21,
+        "Departman":"Muhasebe",
+        "Maas":1000
+    },
+    302:{
+        "Ad":"Furkan",
+        "Soyad":"Anter",
+        "Yas": 23,
+        "Departman":"Blockchain Developer",
+        "Maas":1000000
+    }
+}
+# print(type(omer))
+# print(omer["Ad"])
+# print(omer["Soyad"])
+print(calisan[301]["Maas"])
+print(calisan[302]["Maas"]) 
+ortalama = ((calisan[301]["Maas"]) + (calisan[302]["Maas"]))/2
+print(ortalama)
 # # - Dictionary Metodları
 
 # # - keys()(Anahatarları liste olarak sıralar)
-
+print(calisan.keys())
 # # - values()(Value değerlerini liste olarak sıralar)
-
+print(calisan.values())
 # # - items()(key ve valueları aynı anda sıralar)
-
+print(calisan.items())
 # # - get()(sözlük elemanını alırız)
-
+print(calisan.get(301))
 # # - pop()(istenilen keyi siler)
-
+print(calisan.pop(301))
+print(calisan)
 # # - copy()(sözlüğün kopyasını alır bununla alının kopya aslını etkilemez)
-
+calisan_2 = calisan.copy()
+print(calisan_2)
 # # - update()(Verileri güncellememize yarar)(({}))
 
+calisan_2.update({
+    302:{
+        "Ad":"Ali",
+        "Soyad":"Anter",
+        "Yas": 23,
+        "Departman":"Blockchain Developer",
+        "Maas":1000000
+    }
+})
 
-
+print(calisan_2)
 
 
 
@@ -210,33 +257,40 @@ list_3 = [1,2,3,4,5]
 
 # 2-) Atama Operatörleri
 # - Eşittir Operatörü(=)
-
+deger =7
 # # - Artı Eşittir Operatörü(+=)
-
+deger += 1
+print(deger)
 # # - Eksi Eşittir Operatörü(-=)
-
+deger -= 1
+print(deger)
 # # - Çarpı Eşittir Operatörü(*=)
-
+deger *= 4
+print(deger)
 # # - Bölü Eşittir Operatörü(/=)
-
+deger /= 4
+print(deger)
 # # - Mod Eşittir Operatörü(%=)
-
+deger %= 4
+print(deger)
 # # 3-) Karşılaştırma Operatörleri(Sonucun True veya False değerlerini Aldığımız Operatörler)
 # # - Eşittir Operatörü(==)
-
+print("Ömer"=="Ömer")
+print("Ömer"=="Furkan")
 # # - Eşit Değildir Operatörü(!=)
-
+print("Ömer"!="Furkan")
+print("Ömer"!="Ömer")
 # # - Büyüktür Operatörü(>)
-
+print(4>3)
 # # - Küçüktür Operatörü(<)
-
+print(4<3)
 # # - Büyük Eşittir Operatörü(>=)
-
+print(2>=3)
 # # - Küçük Eşittir Operatörü(<=)
-
+print(2<=3)
 # # 4-) Mantıksal Operatörler(Sonucunda True veya False Değer Aldığımız Operatörlerdir)
 # # - And Operatörü
-
+print(3==3 and 4==5)
 # # And operatöründe True bir sonuç almak için her iki ifadeninde doğru olması gerekir.
 # # - Or Operatörü
 
