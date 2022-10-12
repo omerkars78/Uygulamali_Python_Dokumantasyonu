@@ -415,15 +415,55 @@ i = 0
 # 4-) İç İçe Fonksiyonlar
 
 # 5-) Uygulama
-kisiler = [("Ömer","Kars",2005),("Furkan","Anter",1999),("Kadir","Hoca",1960)]
+# kisiler = [("Ömer","Kars",2005),("Furkan","Anter",1999),("Kadir","Hoca",1960)]
+# def yas_hesapla(dogum_tarihi):
+#     return 2022 - dogum_tarihi
+# def ehliyet(isim,soyisim,dogum_tarihi):
+#     yas = yas_hesapla(dogum_tarihi)
+#     yas = int(yas) 
+#     sure = 18 - yas 
+#     if(yas < 18):
+#         print(f"Sayın {isim} {soyisim} yaşınız {yas} ehliyet alamazsın. {sure} kadar yıl beklemelisin")
+#     else:
+#         print(f"Sayın {isim} {soyisim} yaşınız {yas} olduğu için ehliyet alabilirsin")
 
-
+# for x,y,z in kisiler: 
+#     ehliyet(x,y,z)
 
 
 
 
 #****************************************** NESNE TABANLI PROGRAMLAMA *************************************************************
 # 1-) Class Tanımlanması 
+class Ogrenci():
+    okul_adi = "Celal Bayar"
+    tahsil_duzeyi = "Lisans"
+    ogreci_sayisi = 0 
+
+    def __init__(self,ad,soyad):
+        self.ogrenci_adi = ad
+        self.ogreci_soyadi = soyad
+        self.devamsizlik = 0 
+
+    def devamsizlik_kontrol(self):
+        self.devamsizlik +=1 
+        print("Öğrenci Devamsızlık Yaptı") 
+
+    @classmethod
+    def ogrenci_sayisi_arttir(cls):
+        Ogrenci.ogreci_sayisi += 1 
+    
+furkan = Ogrenci("Furkan","Anter")
+omer = Ogrenci("Ömer","Kars") 
+omer.devamsizlik_kontrol()
+omer.devamsizlik_kontrol()
+omer.devamsizlik_kontrol()
+Ogrenci.ogrenci_sayisi_arttir()
+Ogrenci.ogrenci_sayisi_arttir()
+Ogrenci.ogrenci_sayisi_arttir()
+Ogrenci.ogrenci_sayisi_arttir()
+print(Ogrenci.ogreci_sayisi)
+
 
 
 
