@@ -137,10 +137,10 @@ print(list_2[3][2][1][1][0])
 sekiz = list_2[3][2][1][1][0]
 print(sekiz+10)
 # 2-) Liste Metodları Nelerdir Nasıl Kullanılır?
-
+#https://python-istihza.yazbel.com/listelerin_ve_demetlerin_metotlari.html
 # * Sadece listerde kullanırız
 # * İşlerimiz kolaylaştırır
-
+list_3 = [1,2,3,4,5]
 #  - Append (ekleme)
 
 
