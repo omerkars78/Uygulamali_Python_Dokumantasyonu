@@ -392,14 +392,31 @@ i = 0
 # fabrika("Pamuk","İplik","Kumaş")
 
 # 1-) Fonksiyonların Tanımlanması
+# def toplama():
+#     a= 5
+#     b=6 
+#     print(a+b) 
 
+# toplama()
 # 2-) Fonksiyondan Değer Döndürme (Return)
+# def topla():
+#     a=6
+#     b=7
+#     return a+b
+# topla()
+# print(topla())
+# def hesap_makinesi(a,b):
+#     return a+b 
+
+# print(hesap_makinesi(4,6))
 
 # 3-) Fonksiyona Parametre Gönderme(Fonksiyonun temel bileşenleri = girdi işlem ve çıktı)
 
 # 4-) İç İçe Fonksiyonlar
 
 # 5-) Uygulama
+kisiler = [("Ömer","Kars",2005),("Furkan","Anter",1999),("Kadir","Hoca",1960)]
+
 
 
 
