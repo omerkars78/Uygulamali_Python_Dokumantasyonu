@@ -317,6 +317,18 @@ bilgi_4 = "Bu bir string ifadedir indexler tutar"
 # else:
 #     print("Kullanıcı Adı veya Şifre Hatalı")
 # 2-) Elif Bloğu Nedir Hangi durumlarda Kullanılır ?
+animal_name = input("Bir hayvan adı giriniz: ")
+if(animal_name == "kuş"):
+    print("Evet Kuş Gerçekten bir hayvandır")
+elif(animal_name == "kedi"):
+    print("Evet Kedi Gerçekten bir hayvandır")
+elif(animal_name == "at"):
+    print("Evet at Gerçekten bir hayvandır")
+elif(animal_name == "köpek"):
+    print("Evet Köpek Gerçekten bir hayvandır")
+
+else:
+    print(f"{animal_name} gerçekten bir hayvan mıdır?")
 
 
 # 4-) Elif Uygulaması
